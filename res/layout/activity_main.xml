@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="${packageName}.${activityClass}" >
+      
+    <ImageView
+        android:id="@+id/ivTopImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dogs"
+        android:layout_weight="1" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+	    
+	    <TextView
+	         android:id="@+id/tvDogs"
+	         android:layout_width="0dip"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="Dog Years"
+	         android:textStyle="bold"
+	         android:gravity="center" />
+
+	    <EditText
+	        android:id="@+id/etTopField"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:hint="Start Here!"
+	        android:imeOptions="actionDone"
+	        android:inputType="number"
+	        android:maxLength="2" />
+	    
+     </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" > 
+              
+	    <TextView
+	        android:id="@+id/tvHumans"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="Human Years"
+	        android:textStyle="bold" />
+	        	
+	    <TextView
+	        android:id="@+id/tvBottomField"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/bConvert"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Convert"
+         android:textStyle="bold" />     
+     
+     <ImageView
+        android:id="@+id/ivBottomImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/humans"
+        android:layout_weight="1" />
+     
+</LinearLayout>
